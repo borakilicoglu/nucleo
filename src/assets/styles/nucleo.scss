@@ -1,0 +1,168 @@
+@import "vertical";
+@import "navigation-vertical";
+@import "finance";
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
+
+html,
+body,
+#root {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  height: 100%;
+}
+
+body {
+  font-size: 0.875rem;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  max-height: 64px;
+  min-height: 64px;
+  padding: 0 24px;
+  z-index: 49;
+}
+
+button,
+input {
+  outline: none !important;
+}
+
+.MuiIconButton-root {
+  padding: 8px !important;
+}
+
+.logo {
+  // font-family: "Josefin Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.nucleo-theme-light {
+  color: #27303f;
+  background-color: #f1f5f9;
+}
+
+.nucleo-theme-light *,
+.nucleo-theme-light *::before,
+.nucleo-theme-light *::after {
+  border-color: #e2e8f0;
+}
+
+.nucleo-theme-dark {
+  color: white;
+  background-color: #1a202e;
+}
+
+.nucleo-theme-light .text-secondary {
+  color: #64748b;
+}
+
+.nucleo-theme-light .text-hint {
+  color: #97a6ba;
+}
+
+.theme-dark {
+  color: white;
+  background-color: #1a202e;
+}
+
+.theme-dark .text-secondary {
+  color: #97a6ba;
+}
+
+.vertical-layout {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.vertical-layout > .wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.vertical-layout > .wrapper > .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+nav .selected-item {
+  background-color: #2d3748;
+}
+
+#tradingview_20b32-wrapper,
+#tradingview-widget-0 {
+  height: 100% !important;
+}
+
+.custom-button:hover {
+  background-color: #ffffff1c;
+}
+
+.separator {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  margin: 32px 0;
+}
+
+.separator:before {
+  content: "";
+  display: flex;
+  flex: 1 1 auto;
+  height: 1px;
+  background: #e2e8f0;
+  margin-right: 8px;
+}
+
+.separator:after {
+  content: "";
+  display: flex;
+  flex: 1 1 auto;
+  height: 1px;
+  background: #e2e8f0;
+  margin-left: 8px;
+}
+
+.customizer-toggle {
+  background-color: #e02424 !important;
+  top: 50%;
+}
+
+.fill-height-or-more {
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  > div {
+    // these are flex items
+
+    // flex: 1; same as:
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    // flex-basis: auto;
+    // flex: 1 1 auto;
+    flex: 1;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // > div {
+    //   // also flex items
+    // }
+  }
+}

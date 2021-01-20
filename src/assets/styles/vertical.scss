@@ -1,0 +1,13 @@
+.vertical-layout {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 0;
+}
